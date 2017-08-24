@@ -1,0 +1,25 @@
+/*--------- font-face ---------*/
+@font-face {
+    font-family: 'SFNSText';
+    src: url('fonts/SF-Pro-Text-Regular.eot');
+    src: url('fonts/SF-Pro-Text-Regular.eot') format('embedded-opentype'),
+         url('fonts/SF-Pro-Text-Regular.woff') format('woff'),
+         url('fonts/SF-Pro-Text-Regular.ttf') format('truetype'),
+         url('fonts/SF-Pro-Text-Regular.svg#SF-Pro-Text-Regular') format('svg');
+}
+@font-face {
+    font-family: 'SFNSDisplay';
+    src: url('fonts/SF-Pro-Display-Bold.eot');
+    src: url('fonts/SF-Pro-Display-Bold.eot') format('embedded-opentype'),
+         url('fonts/SF-Pro-Display-Bold.woff') format('woff'),
+         url('fonts/SF-Pro-Display-Bold.ttf') format('truetype'),
+         url('fonts/SF-Pro-Display-Bold.svg#SF-Pro-Display-Bold') format('svg');
+}
+@font-face {
+  font-family: 'SFNSDisplay-Semibold';
+  src: url('fonts/SF-Pro-Display-Semibold.eot');
+  src: url('fonts/SF-Pro-Display-Semibold.eot') format('embedded-opentype'),
+  url('fonts/SF-Pro-Display-Semibold.woff') format('woff'),
+  url('fonts/SF-Pro-Display-Semibold.ttf') format('truetype'),
+  url('fonts/SF-Pro-Display-Semibold.svg#SF-Pro-Display-Semibold') format('svg');
+}

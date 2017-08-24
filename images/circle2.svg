@@ -1,0 +1,33 @@
+<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="406px" height="406px"
+	 viewBox="0 0 406 406" enable-background="new 0 0 406 406" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="-30" y="-215" width="1440" height="900"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<circle clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="100" stroke-miterlimit="10" cx="203" cy="203" r="153"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_3_" x="-30" y="-215" width="1440" height="900"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_4_)" fill="none" stroke="#FFFFFF" stroke-width="100" stroke-miterlimit="10" d="M1177,50
+		c84.5,0,153,68.5,153,153s-68.5,153-153,153l-197,2"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_5_" x="-30" y="-215" width="1440" height="900"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_6_)" fill="none" stroke="#FFFFFF" stroke-width="100" stroke-miterlimit="10" d="M-1443,380.668
+		c-84.5,0-153-68.5-153-153.001c0-84.5,68.5-153,153-153s153,68.5,153,153"/>
+</g>
+</svg>

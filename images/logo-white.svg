@@ -1,0 +1,51 @@
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="270.67px" height="138px"
+	 viewBox="0 0 270.67 138" enable-background="new 0 0 270.67 138" xml:space="preserve">
+<line fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" x1="268.67" y1="2" x2="268.67" y2="136"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="-584.5" y="-381.21" width="1440" height="900"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#ffffff" stroke-width="14" stroke-miterlimit="10" d="M247.67,81.5
+		c0,11.874-10.126,21.5-22,21.5s-21-9.626-21-21.5c0-11.875,9.126-21.5,21-21.5S247.67,69.625,247.67,81.5z"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#ffffff" stroke-width="14" stroke-miterlimit="10" x1="247.67" y1="24" x2="247.67" y2="109"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_3_" x="-584.5" y="-381.21" width="1440" height="900"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_4_)" fill="none" stroke="#ffffff" stroke-width="14" stroke-miterlimit="10" d="M179.67,81.5
+		c0,11.874-10.126,21.5-22,21.5s-21-9.626-21-21.5c0-11.875,9.126-21.5,21-21.5S179.67,69.625,179.67,81.5z"/>
+	
+		<line clip-path="url(#SVGID_4_)" fill="none" stroke="#ffffff" stroke-width="14" stroke-miterlimit="10" x1="179.67" y1="54" x2="179.67" y2="109"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_5_" x="-584.5" y="-381.21" width="1440" height="900"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_6_)" fill="none" stroke="#ffffff" stroke-width="14" stroke-miterlimit="10" d="M70.669,81.5
+		c0-11.875,9.126-21.5,21-21.5s22,9.625,22,21.5V109"/>
+	
+		<line clip-path="url(#SVGID_6_)" fill="none" stroke="#ffffff" stroke-width="14" stroke-miterlimit="10" x1="70.669" y1="24" x2="70.669" y2="109"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_7_" x="-584.5" y="-381.21" width="1440" height="900"/>
+	</defs>
+	<clipPath id="SVGID_8_">
+		<use xlink:href="#SVGID_7_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_8_)" fill="none" stroke="#ffffff" stroke-width="14" stroke-miterlimit="10" d="M47.669,97
+		c-4.218,4.898-10.028,8-17,8c-12.702,0-23-10.298-23-23c0-12.703,10.298-23,23-23c6.972,0,12.783,3.102,17,8"/>
+</g>
+</svg>
