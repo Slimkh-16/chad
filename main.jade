@@ -156,7 +156,56 @@ html
                 p The Chads World team is passionate about the latest and greatest in the conversational space. Using what technology offers today and tomorrow for happy customers and successful advertisers.
             .right-col
               .chat-plugin
-                img(src="images/TakeAway_300x250_Food_CHAD6b.png",alt="")
+                #hidden_div.hidden_div
+                  #cont_dynamic_banner.cont_dynamic_banner
+                    .class_cont_btn_q_dinamic
+                      .cont_checks_all_q_dimamic_pick
+                        #exit
+                          img#boolean_img(src='images/TakeAway_300x250_Food_CHAD6b.png', style='display:block;max-width: 100%;', border='0', alt='')
+                        .cont_btn_all_q_dimamic(data-type='dinamic_banner')
+                          #boolean_btn_1_value.btn_list_q_dinamic(data-code='Here the name', data-act='Here the value')
+                            #boolean_btn_1_text.cont_text_cancel_q_dinamic_location Here the text
+                          #boolean_btn_2_value.btn_list_q_dinamic(data-code='Here the name', data-act='Here the value')
+                            #boolean_btn_2_text.cont_text_cancel_q_dinamic_location Here the text
+                  #cont_multi_select.cont_dash_q_Dinamic_all_multi_select
+                    .class_cont_btn_q_dinamic_multi_select
+                      #cont_all_for_multi_select.cont_all_for_multi_select(data-type='dinamic_multi_select')
+                  .cont_text_container
+                    .cont_pick_a(style='background-image: url(images/logohouse.png);')
+                    .bot_msg Bot message here
+                    .time_ago.bot_time_ago ssssssssss
+                  .cont_globo_all_U
+                    .class_globo_user User text here
+                    .time_ago.user_time_ago
+                  .class_text_multi_select(data-script='', data-act='Your value here', data-code='Your dialog name here')
+                    .cont_text_left_for_multi_select Your text here
+                    .cont_text_right_for_extend_options
+                  #cont_carousel
+                    section.cd-slider
+                      ul#carousel_container
+                      nav
+                        div
+                          a.prev(href='#')
+                        div
+                          a.next(href='#')
+                  li.carousel_content_main(data-color='#FFFFFF')
+                    .carousel_content
+                      .checkout__link(data-url='')
+                        blockquote
+                          p.carousel_text_1 Text1
+                          span.carousel_text_2 More text
+                  #msg_cont
+                    input#input_field(placeholder='Write here...', maxlength='180', name='input_field')
+                    #send.send(data-script='', data-code='Your dialog name here', data-act='Your value here') Send
+                  #circleG.loading_animation
+                    #circleG_1.circleG
+                    #circleG_2.circleG
+                    #circleG_3.circleG
+                  #chat_header
+                    img(src='images/header.jpg', alt='header')
+                #main-container
+                  #feature.feature
+                    #chat_uno
       section.section-footer.section.fp-auto-height
         .container
           .foot-logo
@@ -186,3 +235,9 @@ html
 
 script(type='text/javascript', src='js/all-plugins.min.js')
 script(type='text/javascript', src='js/main.js')
+script(type='text/javascript', src='https://s0.2mdn.net/ads/studio/Enabler.js')
+script(type='text/javascript', src='js/rules.js?v=0')
+script(type='text/javascript', src='js/logic.js?v=3')
+script(type='text/javascript', src='js/carousel.js?v=5')
+script(type='text/javascript', src='js/timeago.js')
+

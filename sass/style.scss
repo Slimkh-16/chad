@@ -32,8 +32,8 @@ b,strong {font-weight: normal;font-family: 'SFNSDisplay-Semibold',sans-serif;}
 }
 .desktop ::-webkit-scrollbar { width: 5px; }
 .desktop ::-webkit-scrollbar:horizontal { height: 5px; }
-.desktop ::-webkit-scrollbar-thumb { width: 5px; border-color: #4CAF50; background-color: #4CAF50;}
-.desktop ::-webkit-scrollbar-thumb:hover { border-width: 1px 1px 1px 2px; border-color: #4CAF50; background-color: #4CAF50; }
+.desktop ::-webkit-scrollbar-thumb { width: 5px; border-color: #ff7171; background-color: #ff7171;}
+.desktop ::-webkit-scrollbar-thumb:hover { border-width: 1px 1px 1px 2px; border-color: #ff7171; background-color: #ff7171; }
 .desktop ::-webkit-scrollbar-track { border-width: 0; }
 .desktop ::-webkit-scrollbar-track-piece { background: #ffffff; }
 body {max-width: 100%}
@@ -135,6 +135,8 @@ h5 {
   margin: 0;
 }
 #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span {
+  width: 8px;
+  height: 8px;
   margin: 0;
   border-color:#221f1f;
 }
@@ -895,4 +897,11 @@ body:not(.fp-viewing-section1) {
   .type-txt svg {
     width: 260px;
     height: 132px;}
+}
+.cont_dynamic_banner {
+  position: absolute;
+}
+.chat-plugin {
+  position: relative;
+  height: 250px;
 }
