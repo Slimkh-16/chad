@@ -17,7 +17,7 @@
 	<clipPath id="SVGID_4_">
 		<use xlink:href="#SVGID_3_"  overflow="visible"/>
 	</clipPath>
-	<path clip-path="url(#SVGID_4_)" fill="none" stroke="#ffd96d" stroke-width="100" stroke-miterlimit="10" d="M1207,65
+	<path clip-path="url(#SVGID_4_)" fill="none" stroke="#57b8dd" stroke-width="100" stroke-miterlimit="10" d="M1207,65
 		c84.5,0,153,68.5,153,153s-68.5,153-153,153l-197,2"/>
 </g>
 <g>
@@ -27,7 +27,7 @@
 	<clipPath id="SVGID_6_">
 		<use xlink:href="#SVGID_5_"  overflow="visible"/>
 	</clipPath>
-	<path clip-path="url(#SVGID_6_)" fill="none" stroke="#57b8dd" stroke-width="100" stroke-miterlimit="10" d="M734,371
+	<path clip-path="url(#SVGID_6_)" fill="none" stroke="#ffd96d" stroke-width="100" stroke-miterlimit="10" d="M734,371
 		c-84.5,0-153-68.5-153-153S649.5,65,734,65s153,68.5,153,153"/>
 </g>
 </svg>

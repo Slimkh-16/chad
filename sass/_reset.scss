@@ -42,8 +42,8 @@ p,span,label,h1,h2,h3,h4,h5,h6,b,strong,i,em {max-width: 100%;word-wrap: break-w
 div {word-wrap: break-word;}
 /*---MEDIA---*/
 @mixin respond-to($media) {
-  @if $media == xs-400 {
-    @media only screen and (max-width: 400px) { @content; }
+  @if $media == xs-360 {
+    @media only screen and (max-width: 360px) { @content; }
   }
   @if $media == xs {
     @media only screen and (max-width: 599px) { @content; }

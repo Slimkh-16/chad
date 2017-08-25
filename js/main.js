@@ -148,6 +148,11 @@
     genFunc.initialize();
     window.addEventListener('scroll', function () {
         scrollTopPosition = window.pageYOffset ? window.pageYOffset : (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
+        if(scrollTopPosition > 20) {
+            document.querySelector('.header').classList.add('fix');
+        } else {
+            document.querySelector('.header').classList.remove('fix');
+        }
     });
     window.addEventListener('load', function () {
 

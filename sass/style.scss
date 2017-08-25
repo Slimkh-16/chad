@@ -40,7 +40,8 @@ body {max-width: 100%}
 //body.noscroll {overflow: hidden;}
 //section {overflow: hidden;}
 .container {
-  width: 1400px;
+  //width: 1400px;
+  width: 1230px;
   max-width: 90%;
   padding: 0 15px;
   margin: 0 auto;
@@ -111,14 +112,20 @@ h5 {
   padding-left: 10px;
   color: $t;
  }
+#fp-nav.right {
+  right: 58px;
+  @include respond-to(lg-1300) {
+    right: 30px;
+  }
+}
 #fp-nav ul li, .fp-slidesNav ul li {
-  width: 10px;
-  height: 10px;
-  margin:16px;
+  width: 8px;
+  height: 8px;
+  margin:16px 0;
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: none;
   border:2px solid #bcbbbb;
 }
@@ -132,8 +139,8 @@ h5 {
   border-color:#221f1f;
 }
 #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   margin: 0;
   left: 0;
   top: 0;
@@ -146,15 +153,15 @@ h5 {
   right: 0;
   left: 0;
   z-index: 777;
-  padding:68px 0 0;
+  padding:64px 0 0;
   @include anim;
   .container {
     position: relative;}
-  @include respond-to(lg) {
-    padding:30px 0 0;
-  }
   @include respond-to(lg-1300) {
-    padding:15px 0 0;
+    padding:35px 0;
+  }
+  @include respond-to(xs) {
+    padding:35px 0;
   }
 }
 body:not(.fp-viewing-section1) {
@@ -164,6 +171,16 @@ body:not(.fp-viewing-section1) {
   .header {
     padding:15px 0;
     background: rgba(255,255,255,0.8);
+    @include respond-to(xs) {
+      padding:8px 0;
+    }
+  }
+}
+.header.fix{
+  padding:15px 0;
+  background: rgba(255,255,255,0.8);
+  @include respond-to(xs) {
+    padding:8px 0;
   }
 }
 .logo {
@@ -189,7 +206,7 @@ body:not(.fp-viewing-section1) {
     li {
       display: inline-block;
       vertical-align: top;
-      margin-left: 80px;
+      margin-left: 76px;
       @include respond-to(lg-1300) {
         margin-left: 40px;
       }
@@ -214,7 +231,7 @@ body:not(.fp-viewing-section1) {
 .next-section {
   position: absolute;
   z-index: 201;
-  bottom:50px;
+  bottom:55px;
   left: 0;
   right: 0;
   margin: auto;
@@ -255,6 +272,7 @@ body:not(.fp-viewing-section1) {
 }
 .type-txt {
   white-space: nowrap;
+  margin-bottom: -9px;
   svg {
     width:405px;
     height:207px;
@@ -303,27 +321,25 @@ body:not(.fp-viewing-section1) {
 .apple-animation-box {
   position: absolute;
   z-index: 200;
-  right: -50px;
-  bottom: -200px;
-  //width:913px;
-  //height: 541px;
-  width: 828px;
-  max-width: 60%;
-  //height: 537px;
+  right: -5%;
+  bottom: -13%;
+  width: 913px;
+  max-width: 63%;
   //box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.4);
   //background: url(../images/phone.png) no-repeat;
   background-size: cover;
-  @include respond-to(lg) {
+  @include respond-to(lg-1300) {
     right: -5%;
     bottom: -10%;
+    max-width: 60%;
   }
 }
 .info-box__head {
   display: block;
-  margin-bottom:30px;
+  margin-bottom:26px;
   @include fb;
   font-size: 48px;
-  line-height:1.17;
+  line-height:56px;
   @include  respond-to(lg-1300) {
     font-size: 38px;
     margin-bottom: 20px;
@@ -355,6 +371,12 @@ body:not(.fp-viewing-section1) {
     width: 450px;
     max-width: 100%;
   }
+  .right-col {
+    padding-left: 110px;
+    @include respond-to(lg-1300) {
+      padding-left: 0;
+    }
+  }
 }
 .left-col {
   float: left;
@@ -374,12 +396,12 @@ body:not(.fp-viewing-section1) {
 }
 .circle-anim {
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   @include respond-to(lg-1300) {
     margin-bottom: 20px;
   }
   img {
-    width: 124px;
+    height: 34px;
   }
 }
 .circle {
@@ -393,8 +415,11 @@ body:not(.fp-viewing-section1) {
   .container {
     font-size: 0;
     line-height: 0;
+    }
+  .row {
     display: flex;
-    justify-content: space-between}
+    justify-content: space-between
+  }
   .col {
     display: inline-block;
     vertical-align: top;
@@ -406,6 +431,17 @@ body:not(.fp-viewing-section1) {
     @include respond-to(sm) {
       width: 100%;
       margin-bottom: 40px;
+    }
+    &:nth-of-type(2) {
+      .item {
+        margin:0 auto;
+      }
+    }
+    &:nth-of-type(3) {
+      .item {
+        margin-left:auto;
+        margin-right: 0;
+      }
     }
   }
 }
@@ -425,12 +461,20 @@ body:not(.fp-viewing-section1) {
   max-width: 100%;
 }
 .item__icon {
-  margin-bottom: 58px;
-  height: 220px;
-  line-height: 220px;
+  margin-bottom: 28px;
+  height: 245px;
+  line-height: 245px;
   text-align: center;
   @include respond-to(lg-1300) {
     margin-bottom: 30px;
+  }
+  @include respond-to(tablet) {
+    height: 200px;
+    line-height: 200px;
+  }
+  @include respond-to(sm) {
+    height: 150px;
+    line-height: 150px;
   }
   svg {
     max-width: 280px;
@@ -440,11 +484,40 @@ body:not(.fp-viewing-section1) {
     vertical-align: middle;
   }
 }
+.item__icon--2 {
+  img {
+    position: relative;
+    top:-20px;
+    max-width: none;
+    max-height: 305px;
+    @include respond-to(tablet) {
+      max-width: 100%;
+      max-height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+.item__icon--3 {
+  img {
+    position: relative;
+    top: -15px;
+    left: -35px;
+    max-width: none;
+    max-height: 295px;
+    @include respond-to(tablet) {
+      max-width: 100%;
+      max-height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
 .item__head {
   display: block;
   margin-bottom: 31px;
   font-size: 40px;
-  line-height: 38px;
+  line-height: 42px;
   @include fb;
   @include respond-to(lg-1300) {
     font-size: 36px;
@@ -471,7 +544,7 @@ body:not(.fp-viewing-section1) {
 //-------------third section
 //-------------fourth section
 .fourth-section {
-  padding:150px 0 130px;
+  padding:155px 0 130px;
   border-bottom:2px solid rgb(223, 223, 223);
   position: relative;
   @include respond-to(lg-1300) {
@@ -485,28 +558,25 @@ body:not(.fp-viewing-section1) {
     right: 0;
     bottom: 0;
     opacity: 0.05;
-    background: url(../images/pattern.svg) 0 50% repeat-y;
+    background: url(../images/pattern.svg) 50% 50% repeat;
   }
 
 }
 .testimonials-slider {
   text-align: center;
   position: relative;
-  padding:0 70px;
+  padding:0 90px;
   .swiper-container {
     width: 980px;
     margin: 0 auto;
     max-width: 100%;
   }
   .swiper-pagination {
-    display: none;
-    @include respond-to(tablet) {
       display: block;
       right: 0;
       left: 0;
       top:100%;
-      margin-top: 15px;
-    }
+      margin-top: 22px;
   }
   .swiper-pagination-bullet {
     width: 8px;
@@ -534,9 +604,9 @@ body:not(.fp-viewing-section1) {
     }
   }
   .swiper-button-prev {
-    left: 20px;}
+    left: 43px;}
   .swiper-button-next {
-    right: 20px;
+    right: 43px;
   }
   blockquote {
     @include fsb;
@@ -580,7 +650,7 @@ body:not(.fp-viewing-section1) {
 //-------------fifth section
 .fifth-section {
   .info-box {
-    width: 385px;
+    width: 410px;
     max-width: 100%;
   }
 }
@@ -591,7 +661,7 @@ body:not(.fp-viewing-section1) {
 //-----------section footer
 .section-footer {
   background: #221f1f;
-  padding:128px 0 113px 0;
+  padding:115px 0 113px 0;
   color: #fff;
   .container {
     font-size: 0;
@@ -613,18 +683,22 @@ body:not(.fp-viewing-section1) {
 }
 .foot-info__box {
   display: inline-block;
-  width:240px;
+  margin-right: 110px;
+  width:170px;
   max-width: 100%;
   text-align: left;
   font-size: 15px;
   line-height: 26px;
   color: #fff;
+  @include respond-to(tablet) {
+    margin-right: 0;
+  }
   a {
     color: #fff;
   }
   address {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-size: 15px;
     line-height: 26px;
     color: #fff;
@@ -634,7 +708,7 @@ body:not(.fp-viewing-section1) {
     margin-bottom: 40px;
     li {
       display: block;
-      margin-bottom: 5px;
+      //margin-bottom: 5px;
       a {
         text-decoration: underline;
         &:hover {
@@ -648,7 +722,7 @@ body:not(.fp-viewing-section1) {
 .list-tel {
   li {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     span {
       display: inline-block;
       width: 30px;
@@ -676,7 +750,7 @@ body:not(.fp-viewing-section1) {
     display: block;
     ul {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       li {
         margin: 0;}
     }
@@ -704,13 +778,19 @@ body:not(.fp-viewing-section1) {
     margin-top: 80px;}
   .fifth-section .info-box {
     width: 100%;}
+  .right-col,.left-col {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .fifth-section .row {
+    margin: 0;}
 }
 @include respond-to(sm) {
   .first-section {
-    padding-top: 110px;
+    padding-top: 122px;
     .info-box {
       width: 100%;
-      margin-bottom: 100px;}
+      margin-bottom: 105px;}
     .apple-animation-box {
       position: relative;
       max-width: none;
@@ -720,6 +800,8 @@ body:not(.fp-viewing-section1) {
       margin-bottom: -150px;
     }
   }
+  .type-txt {
+    margin-bottom: 5px;}
   .first-animation-box {
     top:auto;
     bottom: 15%;
@@ -745,4 +827,72 @@ body:not(.fp-viewing-section1) {
   .info-box p{
     margin-bottom: 25px;
   }
+}
+@include respond-to(xs) {
+  .head-navigation ul li a, .head-navigation ul li span {
+    font-size: 12px;}
+  .info-box__head {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 17px;
+  }
+  .second-section {
+    .info-box__head {
+      margin-bottom: 27px;
+    }
+  }
+  .second-section .info-box {
+    padding-bottom: 72px;
+  }
+  .apple-animation-over {
+    margin-left: -75px;
+    margin-right: -75px;
+  }
+  .third-section .row {
+    display: block;}
+  .item__icon {
+    height: auto;
+    line-height:normal;}
+  .testimonials-slider {
+    padding:0 32px;}
+  .foot-logo {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+  .foot-info {
+    width: 100%;
+    text-align: left;
+  }
+  .item__icon {
+    margin-bottom: 0;}
+  .third-section .col {
+    margin-bottom: 20px;}
+  .fourth-section {
+    padding:98px 0 135px 0;
+  }
+  .testimonials-slider .swiper-pagination {
+    margin-top: 34px;}
+  .foot-logo {
+    img {
+      width: 80px;
+    }
+  }
+  .ft-head {
+    margin-bottom: 2px;}
+  .foot-info {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .foot-info__box .list-lnk {
+    margin-bottom: 11px;
+  }
+  .foot-info__box address {
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 28px;}
+}
+@include respond-to(xs-360) {
+  .type-txt svg {
+    width: 260px;
+    height: 132px;}
 }
