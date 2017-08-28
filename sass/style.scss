@@ -344,8 +344,9 @@ body:not(.fp-viewing-section1) {
   @include fb;
   font-size: 48px;
   line-height:56px;
-  @include  respond-to(lg-1300) {
+  @include  respond-to(lg) {
     font-size: 38px;
+    line-height:42px;
     margin-bottom: 20px;
   }
 
@@ -401,7 +402,7 @@ body:not(.fp-viewing-section1) {
 .circle-anim {
   overflow: hidden;
   margin-bottom: 45px;
-  @include respond-to(lg-1300) {
+  @include respond-to(lg) {
     margin-bottom: 20px;
   }
   img {
@@ -455,7 +456,7 @@ body:not(.fp-viewing-section1) {
   line-height: 28px;
   p{
     margin-bottom: 25px;
-    @include respond-to(lg-1300) {
+    @include respond-to(lg) {
       margin-bottom: 10px;
     }
   }
@@ -469,9 +470,12 @@ body:not(.fp-viewing-section1) {
   height: 245px;
   line-height: 245px;
   text-align: center;
-  @include respond-to(lg-1300) {
-    margin-bottom: 30px;
+  @include respond-to(lg) {
+    margin-bottom: 10px;
   }
+  //@include respond-to(lg-1300) {
+  //  margin-bottom: 30px;
+  //}
   @include respond-to(tablet) {
     height: 200px;
     line-height: 200px;
@@ -523,10 +527,15 @@ body:not(.fp-viewing-section1) {
   font-size: 40px;
   line-height: 42px;
   @include fb;
-  @include respond-to(lg-1300) {
-    font-size: 36px;
-    margin-bottom: 20px;
+  @include respond-to(lg) {
+    font-size: 30px;
+    line-height:38px;
+    margin-bottom: 13px;
   }
+  //@include respond-to(lg-1300) {
+  //  font-size: 36px;
+  //  margin-bottom: 20px;
+  //}
   @include respond-to(sm) {
     font-size: 30px;
     line-height: 1.33;
@@ -654,36 +663,56 @@ body:not(.fp-viewing-section1) {
 //-------------fifth section
 .fifth-section {
   .info-box {
-    width: 410px;
+    //width: 410px;
+    width: 100%;
     max-width: 100%;
   }
 }
 .chat-plugin {
   width: 320px;
   max-width: 100%;
-  margin:150px auto 0 ;
+  margin:55px auto 0 ;
 }
 //-------------fifth section
 //-----------section footer
 .section-footer {
   background: #221f1f;
-  padding:115px 0 113px 0;
+  //padding:115px 0 113px 0;
   color: #fff;
+  padding:100px 0;
   .container {
     font-size: 0;
     line-height: 0;
   }
 }
 .foot-logo {
-  display: inline-block;
-  vertical-align: bottom;
-  width: 101px;
-  height: 52px;
+  //display: inline-block;
+  //vertical-align: bottom;
+  //width: 200px;
+  //height: 52px;
+  img {
+    width: 102px;
+    height: 52px;
+  }
+}
+.copy {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  a {
+    color: #fff;
+    text-decoration: underline;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 }
 .foot-info {
-  display: inline-block;
+  //display: inline-block;
   vertical-align: bottom;
-  width:calc(100% - 102px);
+  //width:calc(100% - 202px);
   text-align: right;
 
 }
@@ -743,9 +772,15 @@ body:not(.fp-viewing-section1) {
   @include fb;
 }
 //------------section footer
+.chat-animation-box img {
+  margin: 0 auto;}
+
+@media only screen and (min-width: 1023px) {
+  .fp-tableCell {
+    padding-top: 30px;}
+}
 @include respond-to(tablet) {
-  .chat-animation-box img {
-    margin: 0 auto;}
+
   .fp-section.fp-table, .fp-slide.fp-table,.fp-tableCell {
     height: auto !important;
     display: block !important;
@@ -783,7 +818,7 @@ body:not(.fp-viewing-section1) {
     padding:90px 0 80px;
   }
   .chat-plugin {
-    margin-top: 80px;}
+    margin-top: 30px;}
   .fifth-section .info-box {
     width: 100%;}
   .right-col,.left-col {
@@ -822,7 +857,11 @@ body:not(.fp-viewing-section1) {
     line-height: 1.71;
   }
   .item__info p{
-    margin-bottom: 25px;}
+    margin-bottom: 25px;
+    @include  respond-to(lg) {
+      margin-bottom:15px;
+    }
+  }
   .testimonials-slider blockquote {
     font-size: 20px;
     line-height: 1.25;
@@ -865,7 +904,7 @@ body:not(.fp-viewing-section1) {
     padding:0 32px;}
   .foot-logo {
     width: 100%;
-    margin-bottom: 26px;
+    //margin-bottom: 26px;
   }
   .foot-info {
     width: 100%;

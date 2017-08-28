@@ -38,6 +38,8 @@
             }
             // allPlagins
             this.allPlagins();
+            //copyright
+            this.copyright();
         },
         getBrowser: function () {
             var ua = navigator.userAgent;
@@ -108,6 +110,13 @@
                 };
             }
             return browsrObj;
+        },
+        copyright: function () {
+            var yearBlock = document.querySelector('.yearN'),
+                yearNow = new Date().getFullYear().toString();
+            if (yearNow.length) {
+                yearBlock.innerText = yearNow
+            }
         },
         allPlagins: function () {
             // fullpage
