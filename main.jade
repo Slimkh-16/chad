@@ -11,8 +11,8 @@ html
     noscript
       div
         strong You need to switch on JavaScript for a full functionality of this website.Here are
-        a(href="https://artjoker.ua/ru/blog/how-to-enable-javascript/" target="_blank") the instructions
-        | for switching  on the JavaScript on you browser.
+        a(href="http://www.enable-javascript.com/" target="_blank")     the instructions
+        |    for switching  on the JavaScript on you browser.
     // [if lte IE 8]>
       Your browser is too old, please,update it
     include _header
@@ -188,12 +188,13 @@ html
                           a.prev(href='#')
                         div
                           a.next(href='#')
-                  li.carousel_content_main(data-color='#FFFFFF')
-                    .carousel_content
-                      .checkout__link(data-url='')
-                        blockquote
-                          p.carousel_text_1 Text1
-                          span.carousel_text_2 More text
+                  ul
+                    li.carousel_content_main(data-color='#FFFFFF')
+                      .carousel_content
+                        .checkout__link(data-url='')
+                          blockquote
+                            p.carousel_text_1 Text1
+                            span.carousel_text_2 More text
                   #msg_cont
                     input#input_field(placeholder='Write here...', maxlength='180', name='input_field')
                     #send.send(data-script='', data-code='Your dialog name here', data-act='Your value here') Send
@@ -225,19 +226,18 @@ html
                   a(href="http://www.chads.world") www.chads.world
               ul.list-tel
                 li
-                  a(href="tel:+3 120 770 7690")
+                  a(href="tel:+31207707690")
                     span M
                     | +3 120 770 7690
                 li
-                  a(href="tel:+1 415 449 8776")
+                  a(href="tel:+14154498776")
                     span EU
                     | +1 415 449 8776
-
-script(type='text/javascript', src='js/all-plugins.min.js')
-script(type='text/javascript', src='js/main.js')
-script(type='text/javascript', src='https://s0.2mdn.net/ads/studio/Enabler.js')
-script(type='text/javascript', src='js/rules.js?v=0')
-script(type='text/javascript', src='js/logic.js?v=3')
-script(type='text/javascript', src='js/carousel.js?v=5')
-script(type='text/javascript', src='js/timeago.js')
+    script(type='text/javascript', src='js/all-plugins.min.js')
+    script(type='text/javascript', src='js/main.js')
+    script(type='text/javascript', src='https://s0.2mdn.net/ads/studio/Enabler.js')
+    script(type='text/javascript', src='js/rules.js?v=0')
+    script(type='text/javascript', src='js/logic.js?v=3')
+    script(type='text/javascript', src='js/carousel.js?v=5')
+    script(type='text/javascript', src='js/timeago.js')
 

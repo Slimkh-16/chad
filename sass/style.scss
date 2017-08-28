@@ -1,9 +1,8 @@
 @charset "UTF-8";
 @import "reset";
 @import "fonts";
-$t: #393939;
-$t2: #576670;
-$th: #7bb355;
+$t: #221f1f;
+$th: #ff7171;
 
 @mixin anim{
   transition: all .3s cubic-bezier(1, 0.09, 0.29, 0.38);
@@ -216,6 +215,9 @@ body:not(.fp-viewing-section1) {
         font-size: 18px;
         @include fb;
         @include anim;
+      }
+      &.active a {
+        color: #ff7171;
       }
     }
   }
@@ -657,7 +659,9 @@ body:not(.fp-viewing-section1) {
   }
 }
 .chat-plugin {
-  margin:150px 0 0 ;
+  width: 320px;
+  max-width: 100%;
+  margin:150px auto 0 ;
 }
 //-------------fifth section
 //-----------section footer
@@ -740,6 +744,8 @@ body:not(.fp-viewing-section1) {
 }
 //------------section footer
 @include respond-to(tablet) {
+  .chat-animation-box img {
+    margin: 0 auto;}
   .fp-section.fp-table, .fp-slide.fp-table,.fp-tableCell {
     height: auto !important;
     display: block !important;
@@ -892,11 +898,15 @@ body:not(.fp-viewing-section1) {
     margin-bottom: 13px;
     font-size: 14px;
     line-height: 28px;}
+  .first-section .info-box__head {
+    max-width: 290px;}
 }
 @include respond-to(xs-360) {
   .type-txt svg {
     width: 260px;
     height: 132px;}
+  .chat-plugin {
+    margin-left: -22px;}
 }
 .cont_dynamic_banner {
   position: absolute;
