@@ -113,8 +113,8 @@ h5 {
  }
 #fp-nav.right {
   right: 58px;
-  @include respond-to(lg-1300) {
-    right: 30px;
+  @include respond-to(lg) {
+    right: 15px;
   }
 }
 #fp-nav ul li, .fp-slidesNav ul li {
