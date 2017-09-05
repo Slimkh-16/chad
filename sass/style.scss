@@ -112,9 +112,9 @@ h5 {
   color: $t;
  }
 #fp-nav.right {
-  right: 58px;
+  right: 20px;
   @include respond-to(lg) {
-    right: 15px;
+    right: 10px;
   }
 }
 #fp-nav ul li, .fp-slidesNav ul li {
@@ -574,7 +574,7 @@ body:not(.fp-viewing-section1) {
     right: 0;
     bottom: 0;
     opacity: 0.05;
-    background: url(../images/pattern.svg) 50% 50% repeat;
+    background: url(assets/images/pattern.svg) 50% 50% repeat;
   }
 
 }
@@ -673,8 +673,9 @@ body:not(.fp-viewing-section1) {
 }
 .chat-plugin {
   width: 320px;
+  height: 650px;
   max-width: 100%;
-  margin:55px auto 0 ;
+  margin:0 auto 0 ;
   .info-box__head {white-space:nowrap;}
 }
 //-------------fifth section
@@ -689,6 +690,7 @@ body:not(.fp-viewing-section1) {
     line-height: 0;
   }
 }
+.section-footer * {color:#fff;}
 .foot-logo {
   //display: inline-block;
   //vertical-align: bottom;
@@ -952,9 +954,32 @@ body:not(.fp-viewing-section1) {
     margin-left: -22px;}
 }
 .cont_dynamic_banner {
-  position: absolute;
-}
+  position: absolute; }
+
 .chat-plugin {
   position: relative;
-  height: 250px;
+  height: 650px;
+  transition:all 0.3s linear;
+  /*overflow:hidden;*/
+}
+#main-container {
+  transition:all 0.3s cubic-bezier(0.22, 0.44, 0, 1);
+  overflow:hidden;
+}
+#main-container *{
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  //color: #333;
+}
+#chat_header img {
+  max-width: none;
+  max-height: none;
+}
+
+@media only screen and (max-height: 780px) and (min-width: 1023px) {
+  #main-container,.overflow_auto,#chat_uno {
+    max-height:500px;
+  }
+  .chat-plugin {
+    height: 555px;}
 }

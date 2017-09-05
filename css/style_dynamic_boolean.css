@@ -1,5 +1,4 @@
 .cont_dynamic_banner{
-	/* new code */
 	position: fixed;
 	top: 0;
 	float:left;
@@ -49,4 +48,6 @@
 	color: #fff;
 	border-radius: 3px;
 	padding: 1px;
+	font-size: 13px;
+	margin: 6px;
 }

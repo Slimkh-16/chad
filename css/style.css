@@ -1,14 +1,4 @@
 
-.chat-plugin {
-  vertical-align: baseline;
-  border: 0 none;
-  outline: 0;
-  padding: 0;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 9pt;
-  color: #333;
-}
 
 #exit {
   max-height: 250px;
@@ -28,6 +18,7 @@
   width: 300px;
   height: 250px;
   position: absolute;
+  background: #f9f5f1;
 }
 
 .overflow_auto{
@@ -52,7 +43,7 @@
 }
 .cont_btn_all_q_dimamic {
     position: absolute !important;
-    bottom: 25px !important;
+    bottom: 10px !important;
     width: 100%;
     right: 15px;
     text-align: right;
@@ -128,21 +119,14 @@
 #chat_header:before {
   content: '';
   position: absolute;
-  left: -12px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  right: 0px;
+  top: 0%;
   width: 50px;
   height: 50px;
-  background: url(../images/arrow2.png) no-repeat;
+  background: url(back.png) no-repeat;
 }
 #chat_header img {
   margin-top: -15px;
-  width: 100%;
-  height: auto;
-  max-height: none;
 }
 .cont_dash_q_Dinamic_all_multi_select {
   width: 100%;
@@ -172,7 +156,9 @@
 }
 #msg_cont {
   background: none;
-  
+  position: relative;
+  float: none;
+  max-width: 100%;
 }
 #input_field {
   border-radius:3px;
@@ -185,4 +171,67 @@
   text-align: center;
   color: #fff;
   width: calc(100% - 230px);
+}
+#circleG {
+  width: auto;
+}
+.circleG {
+  margin: 0 3px;
+}
+.loading_animation .class_globo_user {
+  margin:0 0 0 15px;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 12px 15px;
+  box-shadow: 0 2px 2px #cfcac4;
+  color: #696968;
+}
+.loading_animation .class_globo_user:before {
+  bottom: 0px;
+  z-index: 5;
+  right: auto;
+  width: 0;
+  left: -8px;
+  height: 0;
+  top: auto;
+  border-style: solid;
+  border-width: 4px 10px 4px 0;
+  border-color: transparent #fff transparent transparent;
+  -webkit-transform: rotate(45deg) translateY(5px);
+  -ms-transform: rotate(45deg) translateY(5px);
+  transform: rotate(-45deg) translateY(5px);
+}
+.loading_animation  .class_globo_user:after {
+  top:auto;
+  right: auto;
+  left: -9px;
+  bottom: -2px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 10px 4px 0;
+  border-color: transparent #cfcac4 transparent transparent;
+  -webkit-transform: rotate(45deg) translateY(5px);
+  -ms-transform: rotate(45deg) translateY(5px);
+  transform: rotate(-45deg) translateY(5px);
+}
+.btn_list_q_dinamic {
+  width: auto;
+  min-width: 90px;
+}
+.cont_dynamic_banner {
+  z-index: 5;
+}
+#chat_header img {margin-top: -5px;}
+.powered-by {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  z-index: 4;
+  font-size: 10px;
+  color: #bcb7b2;
+}
+.powered-by b {
+  text-transform: uppercase;
+  color: #bcb7b2;
 }

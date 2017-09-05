@@ -10,9 +10,11 @@
 .class_cont_btn_q_dinamic_multi_select {
 
 	position: relative;
-    width: 260px;
-	margin-left: 5px;
-	margin-right: 5px;
+    /*width: 260px;*/
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
+	width: 100%;
+	margin: 0;
 	min-height: 20px;
 	padding-bottom: 0px;
 	text-align: left;

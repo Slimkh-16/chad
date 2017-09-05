@@ -7,7 +7,7 @@
     position: absolute;
     background-color: #FAFBFC;
     height: 40px;
-    width: 220px;
+    width: 205px;
     margin-left: 10px;
     border-style: none;
     font-size: 23px;
@@ -41,7 +41,7 @@
     position: absolute;
     text-align: center;
     line-height: 40px;
-    right: 0px;
+    right: 10px;
     height: 40px;
     font-size: 23px;
     padding-left: 10px;
