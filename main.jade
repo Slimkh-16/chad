@@ -22,16 +22,43 @@ html
           img(src="images/phone.png",alt="")
       .next-section
         img(src="images/arrow.png",alt="")
-      section.first-section.section
-        .first-animation-box
-          img(src="images/circle.svg",alt="")
+      section.first-section.section(data-index="0")
+        .first-animation-box.circle-anim
+          svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='1423', height='432', viewbox='0 0 1423 432')
+            circle.animation-circle(xmlns='http://www.w3.org/2000/svg', fill='none', stroke='#000000', stroke-width='100', stroke-miterlimit='10', cx='233', cy='218', r='153', style='\
+            stroke-dashoffset: 965;\
+            stroke-dasharray: 965;\
+            stroke-opacity: 0.2;\
+            ')
+            circle.animation-circle.animation-circle--cus(xmlns='http://www.w3.org/2000/svg', fill='none', stroke='#ffffff', stroke-width='100', stroke-miterlimit='10', cx='233', cy='218', r='153', style='\
+            stroke-dashoffset: 965;\
+            stroke-dasharray: 965;\
+            ')
+            path.animation-circle( fill='none', stroke='#000000', stroke-width='100', stroke-miterlimit='10', d='M1207 65c84.5 0 153 68.5 153 153s-68.5 153-153 153l-197 2', style='\
+            stroke-dashoffset: 680;\
+            stroke-dasharray: 680;\
+            stroke-opacity: 0.2;')
+            path.animation-circle.animation-circle--cus( fill='none', stroke='#ffffff', stroke-width='100', stroke-miterlimit='10', d='M1207 65c84.5 0 153 68.5 153 153s-68.5 153-153 153l-197 2', style='\
+            stroke-dashoffset: 680;\
+            stroke-dasharray: 680;\
+            ')
+            path.animation-circle( fill='none', stroke='#000000', stroke-width='100', stroke-miterlimit='10', d='M734 371c-84.5 0-153-68.5-153-153S649.5 65 734 65s153 68.5 153 153', style='\
+                        stroke-dashoffset: 730;\
+                        stroke-dasharray: 730;\
+                        stroke-opacity: 0.2;')
+            path.animation-circle.animation-circle--cus( fill='none', stroke='#ffffff', stroke-width='100', stroke-miterlimit='10', d='M734 371c-84.5 0-153-68.5-153-153S649.5 65 734 65s153 68.5 153 153', style='\
+            stroke-dashoffset: 730;\
+            stroke-dasharray: 730;\
+            ')
+
         .container
           .info-box
             .type-txt
               //span.js_type
               svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='270.67px', height='138px', viewbox='0 0 270.67 138', enable-background='new 0 0 270.67 138', xml:space='preserve')
-                line.text-cursor(fill='none', stroke='#0F0A0B', stroke-width='4', stroke-linecap='square', stroke-linejoin='round', stroke-miterlimit='10', x1='268.67', y1='2', x2='268.67', y2='136')
-                g
+                g.char-cursor
+                  line.text-cursor(fill='none', stroke='#0F0A0B', stroke-width='4', stroke-linecap='square', stroke-linejoin='round', stroke-miterlimit='10', x1='268.67', y1='2', x2='268.67', y2='136')
+                g.char.char--3
                   defs
                     rect#SVGID_1_(x='-584.5', y='-381.21', width='1440', height='900')
                   clippath#SVGID_2_
@@ -39,7 +66,7 @@ html
                   path(clip-path='url(#SVGID_2_)', fill='none', stroke='#221f1f', stroke-width='14', stroke-miterlimit='10', d='M247.67,81.5\
                   c0,11.874-10.126,21.5-22,21.5s-21-9.626-21-21.5c0-11.875,9.126-21.5,21-21.5S247.67,69.625,247.67,81.5z')
                   line(clip-path='url(#SVGID_2_)', fill='none', stroke='#221f1f', stroke-width='14', stroke-miterlimit='10', x1='247.67', y1='24', x2='247.67', y2='109')
-                g
+                g.char.char--2
                   defs
                     rect#SVGID_3_(x='-584.5', y='-381.21', width='1440', height='900')
                   clippath#SVGID_4_
@@ -47,7 +74,7 @@ html
                   path(clip-path='url(#SVGID_4_)', fill='none', stroke='#221f1f', stroke-width='14', stroke-miterlimit='10', d='M179.67,81.5\
                   c0,11.874-10.126,21.5-22,21.5s-21-9.626-21-21.5c0-11.875,9.126-21.5,21-21.5S179.67,69.625,179.67,81.5z')
                   line(clip-path='url(#SVGID_4_)', fill='none', stroke='#221f1f', stroke-width='14', stroke-miterlimit='10', x1='179.67', y1='54', x2='179.67', y2='109')
-                g
+                g.char.char--1
                   defs
                     rect#SVGID_5_(x='-584.5', y='-381.21', width='1440', height='900')
                   clippath#SVGID_6_
@@ -67,29 +94,115 @@ html
         .apple-animation-box
           .apple-animation-over
             img(src="images/phone.png",alt="")
-      section.second-section.section
+      section.second-section.section(data-index="1")
         .container
           .right-col
-            .circle-anim
-              img(src="images/circle-2.svg",alt="")
+            .circle-anim.circle-anim-small
+              svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='112', height='34', viewbox='0 0 1423 432')
+                circle.animation-circle(xmlns='http://www.w3.org/2000/svg', fill='none', stroke='rgb(255, 113, 113)', stroke-width='100', stroke-miterlimit='10', cx='233', cy='218', r='153', style='\
+                          stroke-dashoffset: 965;\
+                          stroke-dasharray: 965;\
+                          stroke-opacity: 0.2;\
+                          ')
+                circle.animation-circle.animation-circle--cus(xmlns='http://www.w3.org/2000/svg', fill='none', stroke='rgb(255, 113, 113)', stroke-width='100', stroke-miterlimit='10', cx='233', cy='218', r='153', style='\
+                          stroke-dashoffset: 965;\
+                          stroke-dasharray: 965;\
+                          ')
+                path.animation-circle( fill='none', stroke='rgb(87, 184, 221)', stroke-width='100', stroke-miterlimit='10', d='M1207 65c84.5 0 153 68.5 153 153s-68.5 153-153 153l-197 2', style='\
+                          stroke-dashoffset: 680;\
+                          stroke-dasharray: 680;\
+                          stroke-opacity: 0.2;')
+                path.animation-circle.animation-circle--cus( fill='none', stroke='rgb(87, 184, 221)', stroke-width='100', stroke-miterlimit='10', d='M1207 65c84.5 0 153 68.5 153 153s-68.5 153-153 153l-197 2', style='\
+                          stroke-dashoffset: 680;\
+                          stroke-dasharray: 680;\
+                          ')
+                path.animation-circle( fill='none', stroke='rgb(255, 217, 109)', stroke-width='100', stroke-miterlimit='10', d='M734 371c-84.5 0-153-68.5-153-153S649.5 65 734 65s153 68.5 153 153', style='\
+                                      stroke-dashoffset: 730;\
+                                      stroke-dasharray: 730;\
+                                      stroke-opacity: 0.2;')
+                path.animation-circle.animation-circle--cus( fill='none', stroke='rgb(255, 217, 109)', stroke-width='100', stroke-miterlimit='10', d='M734 371c-84.5 0-153-68.5-153-153S649.5 65 734 65s153 68.5 153 153', style='\
+                          stroke-dashoffset: 730;\
+                          stroke-dasharray: 730;\
+                          ')
             .info-box
               .info-box__head Know your  customer needs instead of guessing what to push
               p The Chad Banner gives you qualitative insight that provides a sharper understanding of your customers needs. And like every conversation you have with someone who really listens, your customers are more likely to engage with you in the future too. Creating long lasting customers that feel heard, not overheard.
 
           .left-col
             .chat-animation-box
-              img(src="images/chat.jpg",alt="")
-              //.chat-box-over
-              //  .chat-mess
-              //    | Hi there! I`m chad
-              //  .chat-mess
-              //    | The friendly chatting ad bot
-              //  .chat-mess.chat-mess--answ
-              //    | You` are a bot?
-              //  .chat-mess
-              //    | Beeb Bop
-
-      section.third-section.section
+              //img(src="images/chat.jpg",alt="")
+              .chat-box-over
+                .chat-box-over-logo
+                .chat-box-body
+                  .chat-mess-row.align-left.step1
+                    .chat-mess.chat-mess--yellow.chat-mess--1
+                      | Hi there! I`m chad
+                    .chat-mess.chat-mess--yellow.chat-mess--loader
+                      .chat-mess-loader
+                        .pr-mes
+                        .pr-mes
+                        .pr-mes
+                  .chat-mess-row.align-left.step2
+                    .chat-mess.chat-mess--yellow
+                      | The friendly chatting ad bot
+                    .chat-mess.chat-mess--answ.chat-mess--loader
+                      .chat-mess-loader
+                        .pr-mes
+                        .pr-mes
+                        .pr-mes
+                  .chat-mess-row.align-right.step3
+                    .chat-mess.chat-mess--answ
+                      | You` are a bot?
+                    .chat-mess.chat-mess--yellow.chat-mess--loader
+                      .chat-mess-loader
+                        .pr-mes
+                        .pr-mes
+                        .pr-mes
+                  .chat-mess-row.align-left.step4
+                    .chat-mess.chat-mess--yellow
+                      | Yes,I am
+                  .chat-mess-row.align-left.step5
+                    .chat-mess.chat-mess--yellow
+                      | This enables me to help and serv humans on scale
+                  .chat-mess-row.align-left.step6
+                    .chat-mess.chat-mess--yellow
+                      | So, what is your name?
+                    .chat-mess.chat-mess--answ.chat-mess--loader
+                      .chat-mess-loader
+                        .pr-mes
+                        .pr-mes
+                        .pr-mes
+                  .chat-mess-row.align-right.step7
+                    .chat-mess.chat-mess--answ
+                      | I am Andrea
+                    .chat-mess.chat-mess--yellow.chat-mess--loader
+                      .chat-mess-loader
+                        .pr-mes
+                        .pr-mes
+                        .pr-mes
+                  .chat-mess-row.align-left.step8
+                    .chat-mess.chat-mess--yellow
+                      | Hi Andrea,pleased to meet
+                  .chat-mess-row.align-left.step9
+                    .chat-mess.chat-mess--yellow
+                      | And what can i help you with?
+                    .chat-mess.chat-mess--answ.chat-mess--loader
+                      .chat-mess-loader
+                        .pr-mes
+                        .pr-mes
+                        .pr-mes
+                  .chat-mess-row.align-right.step10
+                    .chat-mess.chat-mess--answ
+                      | We would like to get to know our custommers better
+                    .chat-mess.chat-mess--yellow.chat-mess--loader
+                      .chat-mess-loader
+                        .pr-mes
+                        .pr-mes
+                        .pr-mes
+                  .chat-mess-row.align-left.step11
+                    .chat-mess.chat-mess--yellow
+                      | Well Andrea, then you`ve come to the right place
+      section.third-section.section(data-index="2")
         .container
           .row
             .col
@@ -117,7 +230,54 @@ html
                   p Chad banners give the customer a user friendly, trusted experience by staying in the users website environment.
 
                   p New browser tabs or interfaces (e.g. a mobile app) are only opened when it makes sense to the user, giving a truly native feel.
-      section.fourth-section.section.fp-auto-height
+      section.fourth-section.section.fp-auto-height(data-index="3")
+        .pattern
+          svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1', x='0px', y='0px', width='1440px', height='900px', viewbox='0 0 1440 900', enable-background='new 0 0 1440 900', xml:space='preserve')
+            g.pattern-left
+              path( fill='#221F1F', d='M56.463,221.245c-20.477,0-36.517-16.327-36.517-37.169   c0-20.843,16.04-37.169,36.517-37.169c20.854,0,37.821,16.674,37.821,37.169C94.284,204.57,77.317,221.245,56.463,221.245    M56.463,165.165c-10.238,0-18.258,8.307-18.258,18.911s8.02,18.91,18.258,18.91c10.604,0,19.562-8.66,19.562-18.91   S67.067,165.165,56.463,165.165')
+              rect(x='227.093', y='147.559', transform='matrix(0.7071 -0.7071 0.7071 0.7071 -60.9731 220.9489)', fill='#221F1F', width='18.259', height='73.033')
+              path( fill='#221F1F', d='M631.606,178.682c0,20.477-16.326,36.517-37.168,36.517   c-20.843,0-37.169-16.04-37.169-36.517c0-9.515,3.569-18.653,10.053-25.729l13.462,12.333c-3.39,3.701-5.257,8.458-5.257,13.396   c0,10.238,8.307,18.258,18.911,18.258s18.91-8.021,18.91-18.258c0-4.939-1.867-9.695-5.258-13.395l13.46-12.335   C628.035,160.025,631.606,169.164,631.606,178.682')
+              path( fill='#221F1F', d='M378.161,146.906h18.258v37.169c0,10.25,8.959,18.911,19.563,18.911   c10.239,0,18.258-8.307,18.258-18.911h18.258c0,20.842-16.039,37.169-36.516,37.169c-20.854,0-37.821-16.674-37.821-37.169V146.906   z')
+              path( fill='#221F1F', d='M762.018,221.245c-20.479,0-36.518-16.327-36.518-37.169   c0-20.843,16.039-37.169,36.518-37.169c20.854,0,37.82,16.674,37.82,37.169C799.838,204.57,782.871,221.245,762.018,221.245    M762.018,165.165c-10.239,0-18.259,8.307-18.259,18.911s8.02,18.91,18.259,18.91c10.604,0,19.562-8.66,19.562-18.91   S772.621,165.165,762.018,165.165')
+              rect(x='932.647', y='147.559', transform='matrix(0.7071 -0.7071 0.7071 0.7071 145.6992 719.881)', fill='#221F1F', width='18.258', height='73.033')
+              path( fill='#221F1F', d='M1337.16,178.682c0,20.477-16.326,36.517-37.169,36.517   c-20.842,0-37.169-16.04-37.169-36.517c0-9.515,3.57-18.653,10.055-25.729l13.462,12.333c-3.391,3.701-5.258,8.458-5.258,13.396   c0,10.238,8.307,18.258,18.91,18.258c10.604,0,18.91-8.021,18.91-18.258c0-4.939-1.866-9.695-5.257-13.395l13.459-12.335   C1333.589,160.025,1337.16,169.164,1337.16,178.682')
+              path( fill='#221F1F', d='M1083.715,146.906h18.259v37.169c0,10.25,8.958,18.911,19.563,18.911   c10.238,0,18.259-8.307,18.259-18.911h18.258c0,20.842-16.04,37.169-36.517,37.169c-20.854,0-37.821-16.674-37.821-37.169V146.906z   ')
+            g.pattern-right
+              path( fill='#221F1F', d='M505.186,343.349c-20.477,0-36.517-16.326-36.517-37.169   c0-20.842,16.04-37.168,36.517-37.168c20.854,0,37.821,16.674,37.821,37.168C543.006,326.674,526.04,343.349,505.186,343.349    M505.186,287.27c-10.238,0-18.258,8.306-18.258,18.91s8.02,18.911,18.258,18.911c10.604,0,19.562-8.661,19.562-18.911   S515.79,287.27,505.186,287.27')
+              rect(x='139.867', y='269.663', fill='#221F1F', width='18.258', height='73.033')
+              path( fill='#221F1F', d='M364.586,300.787c0,20.477-16.327,36.517-37.169,36.517   c-20.842,0-37.168-16.04-37.168-36.517c0-9.515,3.569-18.653,10.053-25.729l13.462,12.333c-3.39,3.702-5.257,8.459-5.257,13.396   c0,10.239,8.306,18.258,18.91,18.258s18.911-8.02,18.911-18.258c0-4.939-1.867-9.694-5.258-13.395l13.459-12.335   C361.015,282.13,364.586,291.269,364.586,300.787')
+              path( fill='#221F1F', d='M689.626,261.162l12.911,12.911l-26.283,26.282   c-7.248,7.248-7.037,19.706,0.461,27.204c7.24,7.24,18.785,7.038,26.283-0.461l12.91,12.911   c-14.738,14.737-37.624,14.94-52.104,0.461c-14.746-14.746-14.953-38.534-0.461-53.026L689.626,261.162z')
+              path( fill='#221F1F', d='M1210.739,343.349c-20.478,0-36.517-16.326-36.517-37.169   c0-20.842,16.039-37.168,36.517-37.168c20.854,0,37.821,16.674,37.821,37.168C1248.561,326.674,1231.593,343.349,1210.739,343.349    M1210.739,287.27c-10.238,0-18.258,8.306-18.258,18.91s8.02,18.911,18.258,18.911c10.604,0,19.562-8.661,19.562-18.911   S1221.343,287.27,1210.739,287.27')
+              rect(x='845.421', y='269.663', fill='#221F1F', width='18.259', height='73.033')
+              path( fill='#221F1F', d='M1070.14,300.787c0,20.477-16.326,36.517-37.169,36.517   c-20.842,0-37.168-16.04-37.168-36.517c0-9.515,3.569-18.653,10.054-25.729l13.462,12.333c-3.391,3.702-5.258,8.459-5.258,13.396   c0,10.239,8.307,18.258,18.91,18.258c10.604,0,18.911-8.02,18.911-18.258c0-4.939-1.867-9.694-5.259-13.395l13.46-12.335   C1066.568,282.13,1070.14,291.269,1070.14,300.787')
+              path( fill='#221F1F', d='M1395.18,261.162l12.911,12.911l-26.282,26.282   c-7.248,7.248-7.037,19.706,0.461,27.204c7.239,7.24,18.784,7.038,26.282-0.461l12.91,12.911   c-14.737,14.737-37.624,14.94-52.104,0.461c-14.745-14.746-14.953-38.534-0.461-53.026L1395.18,261.162z')
+            g.pattern-left
+              path( fill='#221F1F', d='M593.785,467.063c-20.477,0-36.517-16.325-36.517-37.168   c0-20.842,16.04-37.168,36.517-37.168c20.854,0,37.821,16.674,37.821,37.168C631.606,450.389,614.639,467.063,593.785,467.063    M593.785,410.984c-10.238,0-18.258,8.306-18.258,18.91s8.02,18.911,18.258,18.911c10.604,0,19.562-8.661,19.562-18.911   S604.389,410.984,593.785,410.984')
+              rect(x='47.985', y='393.378', transform='matrix(0.7071 0.7071 -0.7071 0.7071 320.7099 85.5268)', fill='#221F1F', width='18.259', height='73.033')
+              path( fill='#221F1F', d='M389.226,403.434c14.479-14.479,37.366-14.277,52.104,0.461   c14.737,14.738,14.94,37.624,0.46,52.104c-6.728,6.729-15.713,10.664-25.302,11.084l-0.798-18.239   c5.015-0.22,9.699-2.263,13.19-5.755c7.24-7.24,7.037-18.784-0.461-26.282s-19.043-7.701-26.282-0.461   c-3.493,3.492-5.535,8.175-5.754,13.188l-18.24-0.794C378.559,419.151,382.496,410.164,389.226,403.434')
+              path( fill='#221F1F', d='M281.24,435.262l-12.911,12.911l-26.282-26.283   c-7.248-7.248-19.706-7.037-27.204,0.461c-7.24,7.24-7.038,18.785,0.461,26.283l-12.911,12.91   c-14.737-14.738-14.94-37.624-0.461-52.103c14.746-14.746,38.534-14.953,53.026-0.461L281.24,435.262z')
+              path( fill='#221F1F', d='M1299.34,467.063c-20.479,0-36.518-16.325-36.518-37.168   c0-20.842,16.039-37.168,36.518-37.168c20.854,0,37.82,16.674,37.82,37.168C1337.16,450.389,1320.193,467.063,1299.34,467.063    M1299.34,410.984c-10.239,0-18.259,8.306-18.259,18.91s8.02,18.911,18.259,18.911c10.604,0,19.562-8.661,19.562-18.911   S1309.943,410.984,1299.34,410.984')
+              rect(x='753.54', y='393.378', transform='matrix(0.7071 0.7071 -0.7071 0.7071 527.3621 -413.3755)', fill='#221F1F', width='18.259', height='73.033')
+              path( fill='#221F1F', d='M1094.779,403.434c14.479-14.479,37.366-14.277,52.104,0.461   c14.738,14.738,14.94,37.624,0.461,52.104c-6.728,6.729-15.714,10.664-25.302,11.084l-0.798-18.239   c5.014-0.22,9.698-2.263,13.189-5.755c7.24-7.24,7.037-18.784-0.461-26.282s-19.043-7.701-26.282-0.461   c-3.492,3.492-5.535,8.175-5.754,13.188l-18.24-0.794C1084.112,419.151,1088.051,410.164,1094.779,403.434')
+              path( fill='#221F1F', d='M986.794,435.262l-12.91,12.911l-26.282-26.283   c-7.248-7.248-19.706-7.037-27.205,0.461c-7.239,7.24-7.037,18.785,0.461,26.283l-12.91,12.91   c-14.737-14.738-14.94-37.624-0.461-52.103c14.745-14.746,38.533-14.953,53.025-0.461L986.794,435.262z')
+            g.pattern-right
+              path( fill='#221F1F', d='M326.765,595.033c-20.477,0-36.517-16.326-36.517-37.168   c0-20.843,16.04-37.169,36.517-37.169c20.854,0,37.821,16.674,37.821,37.169C364.586,578.359,347.619,595.033,326.765,595.033    M326.765,538.954c-10.239,0-18.258,8.307-18.258,18.911c0,10.604,8.019,18.91,18.258,18.91c10.604,0,19.562-8.66,19.562-18.91   S337.369,538.954,326.765,538.954')
+              rect(x='139.867', y='521.349', transform='matrix(0.7071 -0.7071 0.7071 0.7071 -350.8303 268.7513)', fill='#221F1F', width='18.259', height='73.033')
+              path( fill='#221F1F', d='M658.154,531.404c14.479-14.479,37.365-14.277,52.103,0.461   s14.941,37.624,0.461,52.104c-6.728,6.729-15.714,10.664-25.302,11.084l-0.798-18.24c5.015-0.22,9.698-2.262,13.19-5.754   c7.24-7.24,7.037-18.784-0.461-26.283c-7.499-7.498-19.043-7.7-26.283-0.461c-3.492,3.493-5.535,8.176-5.753,13.189l-18.24-0.795   C647.487,547.122,651.424,538.133,658.154,531.404')
+              path( fill='#221F1F', d='M543.006,595.033h-18.258v-37.168c0-10.25-8.959-18.911-19.563-18.911   c-10.238,0-18.258,8.308-18.258,18.911h-18.258c0-20.843,16.039-37.169,36.516-37.169c20.854,0,37.821,16.674,37.821,37.169   V595.033z')
+              path( fill='#221F1F', d='M1032.319,595.033c-20.478,0-36.517-16.326-36.517-37.168   c0-20.843,16.039-37.169,36.517-37.169c20.854,0,37.82,16.674,37.82,37.169C1070.14,578.359,1053.173,595.033,1032.319,595.033    M1032.319,538.954c-10.239,0-18.259,8.307-18.259,18.911c0,10.604,8.02,18.91,18.259,18.91c10.604,0,19.562-8.66,19.562-18.91   S1042.923,538.954,1032.319,538.954')
+              rect(x='845.421', y='521.349', transform='matrix(0.7071 -0.7071 0.7071 0.7071 -144.1782 767.6536)', fill='#221F1F', width='18.259', height='73.032')
+              path( fill='#221F1F', d='M1363.708,531.404c14.479-14.479,37.366-14.277,52.104,0.461   c14.738,14.738,14.94,37.624,0.46,52.104c-6.727,6.729-15.713,10.664-25.301,11.084l-0.799-18.24   c5.015-0.22,9.698-2.262,13.19-5.754c7.239-7.24,7.036-18.784-0.461-26.283c-7.498-7.498-19.044-7.7-26.282-0.461   c-3.493,3.493-5.535,8.176-5.754,13.189l-18.24-0.795C1353.041,547.122,1356.979,538.133,1363.708,531.404')
+              path( fill='#221F1F', d='M1248.561,595.033h-18.259v-37.168c0-10.25-8.958-18.911-19.563-18.911   c-10.239,0-18.258,8.308-18.258,18.911h-18.259c0-20.843,16.04-37.169,36.517-37.169c20.854,0,37.821,16.674,37.821,37.169V595.033   z')
+            g.pattern-left
+              path( fill='#221F1F', d='M414.678,720.729c-20.477,0-36.517-16.326-36.517-37.169   c0-20.842,16.04-37.168,36.517-37.168c20.854,0,37.821,16.674,37.821,37.168C452.499,704.055,435.532,720.729,414.678,720.729    M414.678,664.649c-10.238,0-18.258,8.307-18.258,18.91c0,10.604,8.02,18.911,18.258,18.911c10.604,0,19.562-8.661,19.562-18.911   C434.24,673.311,425.282,664.649,414.678,664.649')
+              rect(x='585.308', y='647.044', transform='matrix(0.7071 -0.7071 0.7071 0.7071 -309.2432 620.5409)', fill='#221F1F', width='18.259', height='73.033')
+              path( fill='#221F1F', d='M30.654,709.664c-14.479-14.479-14.277-37.365,0.461-52.104   c14.738-14.737,37.624-14.94,52.103-0.461c6.729,6.729,10.666,15.714,11.085,25.303l-18.24,0.798   c-0.22-5.015-2.263-9.698-5.755-13.189c-7.239-7.24-18.784-7.037-26.282,0.461s-7.701,19.042-0.461,26.282   c3.492,3.492,8.175,5.535,13.189,5.754l-0.795,18.24C46.372,720.332,37.384,716.395,30.654,709.664')
+              path( fill='#221F1F', d='M230.855,728.578l-12.911-12.911l26.283-26.282   c7.248-7.248,7.037-19.706-0.461-27.204c-7.24-7.24-18.785-7.037-26.283,0.46l-12.91-12.91   c14.738-14.737,37.624-14.94,52.103-0.461c14.746,14.745,14.953,38.534,0.461,53.025L230.855,728.578z')
+              path( fill='#221F1F', d='M1120.232,720.729c-20.479,0-36.518-16.326-36.518-37.169   c0-20.842,16.039-37.168,36.518-37.168c20.854,0,37.82,16.674,37.82,37.168C1158.053,704.055,1141.086,720.729,1120.232,720.729    M1120.232,664.649c-10.239,0-18.259,8.307-18.259,18.91c0,10.604,8.02,18.911,18.259,18.911c10.604,0,19.562-8.661,19.562-18.911   C1139.794,673.311,1130.836,664.649,1120.232,664.649')
+              rect(x='1290.862', y='647.043', transform='matrix(0.7071 -0.7071 0.7071 0.7071 -102.575 1119.4957)', fill='#221F1F', width='18.258', height='73.034')
+              path( fill='#221F1F', d='M736.208,709.664c-14.479-14.479-14.276-37.365,0.462-52.104   c14.737-14.737,37.624-14.94,52.104-0.461c6.728,6.729,10.664,15.714,11.084,25.303l-18.24,0.798   c-0.221-5.015-2.264-9.698-5.755-13.189c-7.239-7.24-18.784-7.037-26.282,0.461s-7.701,19.042-0.461,26.282   c3.492,3.492,8.176,5.535,13.188,5.754l-0.794,18.24C751.926,720.332,742.938,716.395,736.208,709.664')
+              path( fill='#221F1F', d='M936.409,728.578l-12.911-12.911l26.282-26.282   c7.248-7.248,7.037-19.706-0.461-27.204c-7.239-7.24-18.784-7.037-26.282,0.46l-12.91-12.91   c14.737-14.737,37.624-14.94,52.104-0.461c14.746,14.745,14.953,38.534,0.461,53.025L936.409,728.578z')
         .testimonials-slider
           .swiper-container
             .swiper-wrapper
@@ -141,12 +301,37 @@ html
             img(src="images/arrow_left.png",alt="")
           .swiper-button-next
             img(src="images/arrow_right.png",alt="")
-      section.fifth-section.section
+      section.fifth-section.section(data-index="4")
         .container
           .row
             .left-col
-              .circle-anim
-                img(src="images/circle-2.svg",alt="")
+              .circle-anim.circle-anim-small
+                svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='112', height='34', viewbox='0 0 1423 432')
+                  circle.animation-circle(xmlns='http://www.w3.org/2000/svg', fill='none', stroke='rgb(255, 113, 113)', stroke-width='100', stroke-miterlimit='10', cx='233', cy='218', r='153', style='\
+                                        stroke-dashoffset: 965;\
+                                        stroke-dasharray: 965;\
+                                        stroke-opacity: 0.2;\
+                                        ')
+                  circle.animation-circle.animation-circle--cus(xmlns='http://www.w3.org/2000/svg', fill='none', stroke='rgb(255, 113, 113)', stroke-width='100', stroke-miterlimit='10', cx='233', cy='218', r='153', style='\
+                                        stroke-dashoffset: 965;\
+                                        stroke-dasharray: 965;\
+                                        ')
+                  path.animation-circle( fill='none', stroke='rgb(87, 184, 221)', stroke-width='100', stroke-miterlimit='10', d='M1207 65c84.5 0 153 68.5 153 153s-68.5 153-153 153l-197 2', style='\
+                                        stroke-dashoffset: 680;\
+                                        stroke-dasharray: 680;\
+                                        stroke-opacity: 0.2;')
+                  path.animation-circle.animation-circle--cus( fill='none', stroke='rgb(87, 184, 221)', stroke-width='100', stroke-miterlimit='10', d='M1207 65c84.5 0 153 68.5 153 153s-68.5 153-153 153l-197 2', style='\
+                                        stroke-dashoffset: 680;\
+                                        stroke-dasharray: 680;\
+                                        ')
+                  path.animation-circle( fill='none', stroke='rgb(255, 217, 109)', stroke-width='100', stroke-miterlimit='10', d='M734 371c-84.5 0-153-68.5-153-153S649.5 65 734 65s153 68.5 153 153', style='\
+                                                    stroke-dashoffset: 730;\
+                                                    stroke-dasharray: 730;\
+                                                    stroke-opacity: 0.2;')
+                  path.animation-circle.animation-circle--cus( fill='none', stroke='rgb(255, 217, 109)', stroke-width='100', stroke-miterlimit='10', d='M734 371c-84.5 0-153-68.5-153-153S649.5 65 734 65s153 68.5 153 153', style='\
+                                        stroke-dashoffset: 730;\
+                                        stroke-dasharray: 730;\
+                                        ')
               .info-box
                 .info-box__head About us
                 p Chads World is breaking new ground in the art of Conversational Commerce, helping advertisers create online campaigns that are more friendly and relevant than ever before. Campaigns that engage with customers to help them find products they really want, and share their thoughts on the new products and services they would love to buy.
@@ -156,59 +341,9 @@ html
                 p The Chads World team is passionate about the latest and greatest in the conversational space. Using what technology offers today and tomorrow for happy customers and successful advertisers.
             .right-col
               .chat-plugin
-                .info-box__head Banner sample
-                #hidden_div.hidden_div
-                  #cont_dynamic_banner.cont_dynamic_banner
-                    .class_cont_btn_q_dinamic
-                      .cont_checks_all_q_dimamic_pick
-                        #exit
-                          img#boolean_img(src='images/TakeAway_300x250_Food_CHAD6b.png', style='display:block;max-width: 100%;', border='0', alt='')
-                        .cont_btn_all_q_dimamic(data-type='dinamic_banner')
-                          #boolean_btn_1_value.btn_list_q_dinamic(data-code='Here the name', data-act='Here the value')
-                            #boolean_btn_1_text.cont_text_cancel_q_dinamic_location Here the text
-                          #boolean_btn_2_value.btn_list_q_dinamic(data-code='Here the name', data-act='Here the value')
-                            #boolean_btn_2_text.cont_text_cancel_q_dinamic_location Here the text
-                  #cont_multi_select.cont_dash_q_Dinamic_all_multi_select
-                    .class_cont_btn_q_dinamic_multi_select
-                      #cont_all_for_multi_select.cont_all_for_multi_select(data-type='dinamic_multi_select')
-                  .cont_text_container
-                    .cont_pick_a(style='background-image: url(images/logohouse.png);')
-                    .bot_msg Bot message here
-                    .time_ago.bot_time_ago ssssssssss
-                  .cont_globo_all_U
-                    .class_globo_user User text here
-                    .time_ago.user_time_ago
-                  .class_text_multi_select(data-script='', data-act='Your value here', data-code='Your dialog name here')
-                    .cont_text_left_for_multi_select Your text here
-                    .cont_text_right_for_extend_options
-                  #cont_carousel
-                    section.cd-slider
-                      ul#carousel_container
-                      nav
-                        div
-                          a.prev(href='#')
-                        div
-                          a.next(href='#')
-                  ul
-                    li.carousel_content_main(data-color='#FFFFFF')
-                      .carousel_content
-                        .checkout__link(data-url='')
-                          blockquote
-                            p.carousel_text_1 Text1
-                            span.carousel_text_2 More text
-                  #msg_cont
-                    input#input_field(placeholder='Write here...', maxlength='180', name='input_field')
-                    #send.send(data-script='', data-code='Your dialog name here', data-act='Your value here') Send
-                  #circleG.loading_animation
-                    #circleG_1.circleG
-                    #circleG_2.circleG
-                    #circleG_3.circleG
-                  #chat_header
-                    img(src='images/header.jpg', alt='header')
-                #main-container
-                  #feature.feature
-                    #chat_uno
-      section.section-footer.section.fp-auto-height
+                .info-box__head Sample Banner Coming Soon
+                img(src="images/TakeAway_300x250_Food_CHAD6b.png",alt="")
+      section.section-footer.section.fp-auto-height(data-index="5")
         .container
           .foot-info
             .foot-info__box
@@ -242,9 +377,9 @@ html
               a(href="#",target="_blank") Privacy Statemen
     script(type='text/javascript', src='js/all-plugins.min.js')
     script(type='text/javascript', src='js/main.js')
-    script(type='text/javascript', src='https://s0.2mdn.net/ads/studio/Enabler.js')
-    script(type='text/javascript', src='js/rules.js?v=0')
-    script(type='text/javascript', src='js/logic.js?v=3')
-    script(type='text/javascript', src='js/carousel.js?v=5')
-    script(type='text/javascript', src='js/timeago.js')
+    //script(type='text/javascript', src='https://s0.2mdn.net/ads/studio/Enabler.js')
+    //script(type='text/javascript', src='js/rules.js?v=0')
+    //script(type='text/javascript', src='js/logic.js?v=3')
+    //script(type='text/javascript', src='js/carousel.js?v=5')
+    //script(type='text/javascript', src='js/timeago.js')
 

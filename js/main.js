@@ -119,6 +119,17 @@
             }
         },
         allPlagins: function () {
+            // setTimeout(function(){$('.chat-box-over').addClass('step1')},400)
+            // setTimeout(function(){$('.chat-box-over').addClass('step2')},1400)
+            // setTimeout(function(){$('.chat-box-over').addClass('step3')},3000)
+            // setTimeout(function(){$('.chat-box-over').addClass('step4')},5000)
+            // setTimeout(function(){$('.chat-box-over').addClass('step5')},5500)
+            // setTimeout(function(){$('.chat-box-over').addClass('step6')},6000)
+            // setTimeout(function(){$('.chat-box-over').addClass('step7')},7800)
+            // setTimeout(function(){$('.chat-box-over').addClass('step8')},9500)
+            // setTimeout(function(){$('.chat-box-over').addClass('step9')},10000)
+            // setTimeout(function(){$('.chat-box-over').addClass('step10')},12000)
+            // setTimeout(function(){$('.chat-box-over').addClass('step11')},14000)
             // fullpage
             $('#fullpage').fullpage({
                 anchors: ['section1', 'section2', 'section3', 'section4','section5','section6'],
@@ -128,6 +139,20 @@
                 easingcss3: 'cubic-bezier(0.22, 0.44, 0, 1)',
                 responsiveWidth: 1023,
                 responsiveHeight: 650,
+                afterLoad: function(anchorLink, index){
+                    $('#fullpage').addClass('active-animate');
+                    $('.first-section').addClass('active-animate');
+                },
+                onLeave: function(index, nextIndex, direction){
+                    $('[data-index="' + index +'"]').addClass('active-animate');
+                    if(index === 1) {
+                        for(var k = 1; k < 12;k++) {
+                            (function(k){
+                                setTimeout(function(){$('.chat-box-over').addClass('step' + k)},1500*k);
+                            })(k);
+                        }
+                    }
+                },
             });
             $('.next-section').on('click',function(){
                 $.fn.fullpage.moveSectionDown();
